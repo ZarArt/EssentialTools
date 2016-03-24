@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EssentialTools.Models
 {
-    interface IValueCalculator
+    public interface IValueCalculator
     {
+        decimal ValueProducts(IEnumerable<Product> products);
     }
 }
