@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using EssentialTools.Models;
 using Ninject;
 
@@ -10,6 +6,8 @@ namespace EssentialTools.Controllers
 {
     public class HomeController : Controller
     {
+        private IValueCalculator calc;
+
         private Product[] products = {
             new Product {Name = "Каяк", Category = "Водные виды спорта", Price = 275M},
             new Product {Name = "Спасательный жилет", Category = "Водные виды спорта", Price = 48.95M},
@@ -17,19 +15,19 @@ namespace EssentialTools.Controllers
             new Product {Name = "Угловой флажок", Category = "Футбол", Price = 34.95M}
         };
 
+        public HomeController(IValueCalculator calcParam)
+        {
+            calc = calcParam;
+        }
+
         public ActionResult Index()
         {
-            IKernel ninjectKernel = new StandardKernel();
-            ninjectKernel.Bind<IValueCalculator>().To<LinqValueCalculator>();
-
-            IValueCalculator calc = ninjectKernel.Get<IValueCalculator>();
             ShoppingCart cart = new ShoppingCart(calc)
             {
                 Products = products
             };
-
-            decimal totalvalue = cart.CalculateProductTotal();
-            return View(totalvalue);
+            decimal totalValue = cart.CalculateProductTotal();
+            return View(totalValue);
         }
 
     }

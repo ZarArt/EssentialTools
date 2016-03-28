@@ -30,3 +30,13 @@ E:\My SW\EssentialTools\EssentialTools\bin\System.Web.WebPages.Razor.xml
 E:\My SW\EssentialTools\EssentialTools\obj\Debug\EssentialTools.csprojResolveAssemblyReference.cache
 E:\My SW\EssentialTools\EssentialTools\obj\Debug\EssentialTools.dll
 E:\My SW\EssentialTools\EssentialTools\obj\Debug\EssentialTools.pdb
+e:\My SW\EssentialTools\EssentialTools\bin\Ninject.dll
+e:\My SW\EssentialTools\EssentialTools\bin\Ninject.Web.Common.dll
+e:\My SW\EssentialTools\EssentialTools\bin\Ninject.Web.Mvc.dll
+e:\My SW\EssentialTools\EssentialTools\bin\WebActivator.dll
+e:\My SW\EssentialTools\EssentialTools\bin\Ninject.pdb
+e:\My SW\EssentialTools\EssentialTools\bin\Ninject.xml
+e:\My SW\EssentialTools\EssentialTools\bin\Ninject.Web.Common.pdb
+e:\My SW\EssentialTools\EssentialTools\bin\Ninject.Web.Common.xml
+e:\My SW\EssentialTools\EssentialTools\bin\Ninject.Web.Mvc.pdb
+e:\My SW\EssentialTools\EssentialTools\bin\Ninject.Web.Mvc.xml
